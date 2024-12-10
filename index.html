@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="bill-input">
+        <p>Bill Amount:</p>
+        <div class="input-container">
+          <span>₹</span>
+          <input id="bill-amount" type="number" />
+        </div>
+        <p>Select Tip</p>
+        <div class="tip-container disabled">
+          <button class="tip">5%</button>
+        </div>
+        <input
+          class="custom-tip gray-input"
+          type="number"
+          placeholder="Custom Tip in Percentage"
+          disabled
+        />
+        
+        <input
+          class="number-of-people gray-input"
+          type="number"
+          placeholder="Number of people"
+          disabled
+        />
+        <button class="generate-bill-btn" disabled>Generate Bill</button>
+      </div>
+
+      <div class="bill-output">
+        <p class="tip-amount">Tip amount <span>₹0</span></p>
+        <p class="total">Total <span>₹0</span></p>
+        <p class="each-person-bill">Each Person Bill <span>₹0</span></p>
+        <button class="reset-btn" disabled>Reset</button>
+        <div class="output-footer">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2232/2232083.png"
+            alt="Cartoon Illustration"
+          />
+          <p>Split your bills effortlessly!</p>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+        <!-- <p> -->
+          Created with 💘 by Piyush
+        <!-- </p> -->
+      </footer>
+  </body>
+</html>
