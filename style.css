@@ -200,3 +200,17 @@ main > div {
   }
   
   
+footer {
+    background: linear-gradient(135deg, #a8a4d1, #b4adce);
+    color: black;
+    text-align: center;
+    padding: 2px;
+    border-top: 2px solid transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+ 
+
