@@ -20,7 +20,7 @@ calculateBillBtn.addEventListener('click', () => {
 
   tipDisplay.innerText = `₹${calculatedTip}`
   totalDisplay.innerText = `₹${finalBill}`
-  perPersonDisplay.innerText = `₹${individualShare}`
+  perPersonDisplay.innerText = `₹${individualShare.toFixed(2)}`
 
   clearBtn.disabled = false
 })
@@ -92,3 +92,21 @@ peopleCountInput.addEventListener('input', () => {
     calculateBillBtn.disabled = true
   }
 })
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", () => {
+    
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition >= documentHeight) {
+      footer.classList.add("visible"); 
+    } else {
+      footer.classList.remove("visible"); 
+    }
+  });
+});
