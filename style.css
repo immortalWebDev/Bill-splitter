@@ -6,7 +6,7 @@
 
 body {
   margin-top: -50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(120deg, #d1e7f8, #f8d1e7);
   color: #333;
   line-height: 1.5;
@@ -39,8 +39,8 @@ main > div {
   margin-bottom: 15px;
 }
 
-.bill-input{
-    padding: 20px;
+.bill-input {
+  padding: 20px;
 }
 
 .input-container {
@@ -171,56 +171,72 @@ main > div {
   transform: translateY(-3px);
 }
 
+.info-box {
+  border: 1px solid blueviolet;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-family: cursive, sans-serif;
+}
+
 .output-footer {
-    margin-top: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .output-footer img {
-    width: 100px; 
-    height: auto;
-    opacity: 0.9;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .output-footer img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  
-  .output-footer p {
-    font-size: 14px;
-    color: #ffffff;
-    font-style: italic;
-    margin-top: 5px;
-  }
-  
-  
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output-footer img {
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.output-footer img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.output-footer p {
+  font-size: 14px;
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 footer {
-    background: linear-gradient(135deg, #a8a4d1, #b4adce);
-    color: black;
-    text-align: center;
-    padding: 2px;
-    border-top: 2px solid transparent;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  background: linear-gradient(135deg, #a8a4d1, #b4adce);
+  color: black;
+  text-align: center;
+  padding: 2px;
+  border-top: 2px solid transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: monospace, cursive;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer.visible {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-y: auto;
   }
-  
- 
 
-
-@media (max-width: 600px) {
   main {
-    flex-direction: column;
+    gap: 32px;
   }
 
-  .tip-container {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  footer {
+    display: none;
   }
 }
